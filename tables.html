@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Multiplication Table Generator</title>
+    <style>
+
+.a1{
+border-radius: 5px; ;
+margin: 5px;
+
+}
+
+
+
+    </style>
+</head>    
+<body>
+
+<p>Enter a number to display  </p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Result</button>
+
+<p id="message"><table></table></p>
+<table id="disp"><table class="a1"></table></table>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("message");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+
+
+
+  try { 
+    if(x == "") 
+         throw "is Empty";
+         if(isNaN(x)) throw "not a number";
+
+
+    else
+    {
+      for(let i = 1; i <= 10; i++) {
+            const result = i * x;
+            disp.innerHTML +=`<table class="a1"> <tr> 
+                        <td>${x}</td>     
+                        <td>*</td>    
+                        <td>${i}=</td> 
+                        <td>${result}</td>  </br>    
+                      </tr></table>`;
+        }
+    
+   
+    }
+
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+

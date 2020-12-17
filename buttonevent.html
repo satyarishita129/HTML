@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>BUTTON EVENTS</title>
+</head>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+<p id="demo"> </p>
+<br>
+
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+<p id="demo2"></p>
+<button id="demo1" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo2").innerHTML = Date();
+}
+function mouseOver() {
+  document.getElementById("demo1").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("demo1").style.color = "black";
+}
+
+</script>
+
+
+</body>
+</html>

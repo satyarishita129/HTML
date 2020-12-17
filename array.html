@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+<button onclick="cArray()">array</button>
+
+<button onclick="sorArray()">sorted array</button>
+<button onclick="smallNum()">small number</button>
+<button onclick="bigNum()">big number</button>
+
+<p id="demo"></p>
+
+
+<script>
+var num= ["45", "52", "15", "28", "89", "57", "65", "49", "98", "26" ];
+
+function cArray() {
+
+  document.getElementById("demo").innerHTML = num;
+
+}
+
+function sorArray() {
+  num.sort();
+  document.getElementById("demo").innerHTML = num;
+
+}
+
+function smallNum() {
+  num.sort();
+  document.getElementById("demo").innerHTML = num[0];
+
+}
+
+function bigNum() {
+  num.sort();
+  document.getElementById("demo").innerHTML = num[9];
+
+}
+
+</script>
+
+</body>
+</html>
