@@ -1,0 +1,28 @@
+
+      <style> 
+      
+         .title{ 
+            
+             
+         margin-bottom: 10px; 
+         text-align:center; 
+         width: 210px; 
+         color:rgb(128, 0, 53); 
+         border: solid black 2px; 
+         } 
+  
+         input[type="button"] 
+         { 
+        
+         color: black; 
+         border: solid rgb(12, 157, 214) 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:rgb(235, 17, 119); 
+         border: solid black 2px; 
+         width:100% 
+         } 
+      </style> 

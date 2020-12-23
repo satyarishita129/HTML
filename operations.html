@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+        <button type="button" onclick="myFunction()">Addition</button>
+        <p id="Add"></p>
+        <button type="button" onclick="myFunction1()">Substraction</button>
+        <p id="Sub"></p>
+        <button type="button" onclick="myFunction2()">Multiplication</button>
+        <p id="Mul"></p>
+        <button type="button" onclick="myFunction3()">Division</button>
+        <p id="Div"></p>
+        <button type="button" onclick="myFunction4()">Reminder</button>
+        <p id="Rem"></p>
+        <button type="button" onclick="myFunction5()">pre increment</button>
+        <p id="Pre"></p>
+        <button type="button" onclick="myFunction6()">post decrement</button>
+        <p id="Post"></p>
+
+
+        
+    <script>
+        var x=17,y=5;
+        function myFunction()
+        {
+        
+        document.getElementById("Add").innerHTML=(x+y);
+        }
+        function myFunction1()
+        {
+        
+        document.getElementById("Sub").innerHTML=(x-y);
+        }
+        function myFunction2()
+        {
+        
+        document.getElementById("Mul").innerHTML=(x*y);
+        }
+        function myFunction3()
+        {
+        
+        document.getElementById("Div").innerHTML=(x/y);
+        }
+        function myFunction4()
+        {
+        
+        document.getElementById("Rem").innerHTML=(x%y);
+        }
+        function myFunction5()
+        {
+        
+        document.getElementById("Pre").innerHTML=(x++);
+        }
+        function myFunction6()
+        {
+        
+        document.getElementById("Post").innerHTML=(--x);
+
+
+
+        }
+        </script>
+    </body>
+    </html>
