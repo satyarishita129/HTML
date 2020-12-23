@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Watches</title>
+
+		<link rel="stylesheet" href="shopping.css"/>
+		<script src="shop.js" async></script>
+
+	<!--	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="This is the description">
+        
+        
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+SC:900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet"> -->
+    </head>
+    <body>
+	
+        <header>
+			<div class="container">
+				<div id="branding">
+                    <p>Date & Time: <span id="datetime"></span></p>
+
+      <script>
+      var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+				
+				</div>
+				<nav>
+					<ul> 
+                        <li class="current"><a href="about.html">about</a></li>
+                       
+					
+						<li>
+							<div class="dropdown">
+								<a href="login.html">login</a>
+								
+							</div> 
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<section class="main-display">
+			<h1 class="label">Watches</h1>
+			<div class="store-items">
+			
+				<div class="shop-item">
+					<span class="shop-item-title">Fossil</span>
+					<div class="box">
+						<img class="shop-item-image" src="foss1.jpg">
+					</div>
+					<div class="shop-item-details">
+						<span class="shop-item-price">₹500.99</span>
+						<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+					</div>
+				</div>
+				
+				<div class="shop-item">
+					<span class="shop-item-title">FastTrack</span>
+					<div class="box">
+						<img class="shop-item-image" src="fasttrack2.png">
+					</div>
+					<div class="shop-item-details">
+						<span class="shop-item-price">₹489.99</span>
+						<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<span class="shop-item-title">Zoop</span>
+					<div class="box">
+						<img class="shop-item-image" src="zoop3.jpg">
+					</div>
+					<div class="shop-item-details">
+						<span class="shop-item-price">₹789.99</span>
+						<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<span class="shop-item-title">Sonata</span>
+					<div class="box">
+						<img class="shop-item-image" src="son4.jpg">
+					</div>
+					<div class="shop-item-details">
+						<span class="shop-item-price">₹800.99</span>
+						<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+					</div>
+				</div>
+				
+				<div class="shop-item">
+					<span class="shop-item-title">Star Dust</span>
+					<div class="box">
+						<img class="shop-item-image" src="stratdue5.jpg">
+					</div>
+					<div class="shop-item-details">
+						<span class="shop-item-price">₹800.99</span>
+						<button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class="cart-display">
+			<h1>Cart</h1>
+			<div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+		</section>
+		
+		
+		
+    </body>
+</html>
